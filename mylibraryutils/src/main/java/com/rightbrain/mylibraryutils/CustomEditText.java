@@ -7,19 +7,21 @@ import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
-public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText{
+public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText {
     Typeface tf;
+
     public CustomEditText(@NonNull Context context) {
         super(context);
 
         tf = ResourcesCompat.getFont(context, R.font.montserrat);
         this.setTypeface(tf);
         int padding = (int) getResources().getDimension(R.dimen.text_padding);
-        this.setTextSize( getResources().getDimension(R.dimen.text_size));
+        this.setTextSize(getResources().getDimension(R.dimen.text_size));
+        this.setBackground(ContextCompat.getDrawable(context, R.drawable.edittextstyle));
         this.setTextColor(Color.parseColor("#1a1a1a"));
-        this.setHintTextColor(Color.parseColor("#FFF44336"));
 
 
         this.setPadding(
@@ -36,7 +38,7 @@ public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText{
         tf = ResourcesCompat.getFont(context, R.font.montserrat);
         this.setTypeface(tf);
         int padding = (int) getResources().getDimension(R.dimen.text_padding);
-        this.setTextSize( getResources().getDimension(R.dimen.text_size));
+        this.setTextSize(getResources().getDimension(R.dimen.text_size));
         this.setTextColor(Color.parseColor("#1a1a1a"));
         this.setHintTextColor(Color.parseColor("#FFF44336"));
         this.setPadding(
@@ -52,7 +54,7 @@ public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText{
         tf = ResourcesCompat.getFont(context, R.font.montserrat);
         this.setTypeface(tf);
         int padding = (int) getResources().getDimension(R.dimen.text_padding);
-        this.setTextSize( getResources().getDimension(R.dimen.text_size));
+        this.setTextSize(getResources().getDimension(R.dimen.text_size));
         this.setTextColor(Color.parseColor("#1a1a1a"));
         this.setHintTextColor(Color.parseColor("#FFF44336"));
         this.setPadding(
