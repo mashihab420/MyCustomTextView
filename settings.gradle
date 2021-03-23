@@ -1,0 +1,3 @@
+include ':mylibraryutils'
+include ':app'
+rootProject.name = "Myutilslibrary"
