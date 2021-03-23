@@ -40,7 +40,7 @@ public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText 
         int padding = (int) getResources().getDimension(R.dimen.text_padding);
         this.setTextSize(getResources().getDimension(R.dimen.text_size));
         this.setTextColor(Color.parseColor("#1a1a1a"));
-        this.setHintTextColor(Color.parseColor("#FFF44336"));
+        this.setBackground(ContextCompat.getDrawable(context, R.drawable.edittextstyle));
         this.setPadding(
                 padding,
                 padding,
@@ -56,7 +56,7 @@ public class CustomEditText extends androidx.appcompat.widget.AppCompatEditText 
         int padding = (int) getResources().getDimension(R.dimen.text_padding);
         this.setTextSize(getResources().getDimension(R.dimen.text_size));
         this.setTextColor(Color.parseColor("#1a1a1a"));
-        this.setHintTextColor(Color.parseColor("#FFF44336"));
+        this.setBackground(ContextCompat.getDrawable(context, R.drawable.edittextstyle));
         this.setPadding(
                 padding,
                 padding,
